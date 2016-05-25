@@ -9,7 +9,9 @@ ss-tor.sh 用來安裝shadowsocks-libev和洋葱路由(TOR)客戶端
 ss-tor-menu.sh是遠程控制shadowsocks流量是否經TOR訪問互聯網客戶端
 
 以上可在Ubuntu 14.04/15.04 或 Debian 7/8 獨立IPv4的VPS或是NAT Share IPv4 VPS
+
 請選擇ss-libev-install.sh或ss-tor.sh其中之一安裝服務器
+
 ss-tor-menu是本地Linux電腦控制服務器TOR開關圖型腳本
 
 使用方法
