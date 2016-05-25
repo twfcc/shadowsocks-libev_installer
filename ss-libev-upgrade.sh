@@ -54,10 +54,10 @@ case "$flag" in
                         mv -f shadowsocks-libev*.deb ss-build_"$my_ss_ver" 2> /dev/null
                         mv -f *shadowsocks-libev*.deb ss-build_"$my_ss_ver" 2> /dev/null
                         mv -f shadowsocks-libev*.tar.gz ss-build_"$my_ss_ver" 2> /dev/null
-                        [ -d shadowsocks-libev ] && rm -rf shadowsocks-libev
                  else
                         :
                  fi
+                 [ -d shadowsocks-libev ] && rm -rf shadowsocks-libev
                  if git clone https://github.com/shadowsocks/shadowsocks-libev.git
                         then
                                 cd shadowsocks-libev
