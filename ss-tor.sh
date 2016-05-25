@@ -106,9 +106,9 @@ if [ -e "$tor_config" ]
 		echo "StrictNodes 1" >> "$tor_config"
 		echo "ExcludeNodes {hk},{cn},{mo},{ru}" >> "$tor_config"
 		echo "ExitNodes {us},{jp},{sg},{kp},{gb},{nz},{au},{tw}" >> "$tor_config"
-else
-	echo "$tor_config not found." >&2
-	exit 1
+	else
+		echo "$tor_config not found." >&2
+		exit 1
 fi
 
 [ -d shadowsocks-libev ] && {
