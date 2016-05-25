@@ -23,23 +23,33 @@ ss-tor-menu.sh 請訪問https://victor-notes.blogspot.com/2016/05/shadowsockstor
 
 Explanation
 
-ss-libev-install.sh is a bash script for install shadowsocks-libev on Debian Base OS
-ss-libev-upgrade.sh is an 'upgrade shadowsocks-libev server bash script'
-ss-tor.sh is used for install shadowsocks-libev and TOR client on VPS
+ss-libev-install.sh is a bash script for install shadowsocks-libev on Debian Base OS ，
+
+ss-libev-upgrade.sh is an 'upgrade shadowsocks-libev server bash script' ，
+
+ss-tor.sh is used for install shadowsocks-libev and TOR client on VPS ，
+
 These scripts are worked on Ubuntu 14.04/15.04 or Debian 7/8 'Dedicated IPv4 VPS' or 
-'NAT Share IPv4 VPS'
+'NAT Share IPv4 VPS'，
+
 Please select ss-libev-install.sh or ss-tor.sh to install server on VPS.
 
 Usage
 
 Login your VPS with user 'root' via ssh client and downloading the script, select one
-script which is suitable for your VPS. Input: chmod +x script_name.sh 
-Input: ./script_name.sh -n if your vps' type is 'NAT Share IPv4 VPS' or
+script which is suitable for your VPS. Input: chmod +x script_name.sh ，
+
+Input: ./script_name.sh -n if your vps' type is 'NAT Share IPv4 VPS'
+
+or
+
 Input: ./script_name.sh -s if your vps' type is 'Dedicated IPv4 VPS'
 
-shadowsock-libev github at https://github.com/shadowsocks/shadowsocks-libev
-TOR Project at https://www.torproject.org/
 for ss-tor-menu.sh, please visit: https://victor-notes.blogspot.com/2016/05/shadowsockstor.html
 for more details.
 
-shadowsocks-libev github 
+shadowsock-libev github at https://github.com/shadowsocks/shadowsocks-libev
+
+TOR Project at https://www.torproject.org/
+
+
