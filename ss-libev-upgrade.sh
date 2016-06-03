@@ -17,11 +17,11 @@
 if ! which curl > /dev/null 2>&1 ; then
         apt-get update && apt-get install curl -y
 fi
-ss_install_script="https://www.dropbox.com/s/mtare61xbd7brim/ss-libev-install.sh?dl=0"
+ss_install_script="https://raw.githubusercontent.com/twfcc/shadowsocks-libev_installer/master/ss-libev-install.sh"
 if ! which ss-server > /dev/null 2>&1 ; then
         echo "shadowsocks-libev is not installed on system yet." >&2
         echo "The install script download by input" >&2
-        echo "wget --no-check-certificate -O ss-libev-install.sh $ss_install_script" >&2
+        echo "wget --no-check-certificate $ss_install_script" >&2
         echo "chmod +x ./ss-libev-install.sh" >&2
         echo "./ss-libev-install.sh -s" >&2
         echo "or" >&2
@@ -52,8 +52,9 @@ case "$flag" in
                  if [ -n "$my_ss_deb" ] ; then
                         mkdir ss-build_"$my_ss_ver"
                         mv -f shadowsocks-libev*.deb ss-build_"$my_ss_ver" 2> /dev/null
-                        mv -f *shadowsocks-libev*.deb ss-build_"$my_ss_ver" 2> /dev/null
+                        mv -f libshadowsocks-d*.deb ss-build_"$my_ss_ver" 2> /dev/null
                         mv -f shadowsocks-libev*.tar.gz ss-build_"$my_ss_ver" 2> /dev/null
+                        mv -f shadowsocks-libev*.{dsc,changes} ss-build_"$my_ss_ver" 2> /dev/null
                  else
                         :
                  fi
