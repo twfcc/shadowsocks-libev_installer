@@ -5,7 +5,7 @@
 # $usage: $0
 # works on debian base os
 # target os: debian 7/8, ubuntu 14.04/15.04
-# this script is part of ss-libev-install.sh for upgrade
+# this script is part of [ss-libev-install.sh|ss-tor.sh] for upgrade
 # Public domain use as your own risk!
 
 [ $(pwd) != "/root" ] && cd "$HOME"
