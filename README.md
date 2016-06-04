@@ -4,8 +4,11 @@ Install shadowsocks-libev on Debian Base OS
 說明
 
 ss-libev-install.sh是一個bash腳本，安裝shadowsocks-libev在Debian Base OS.
+
 ss-libev-upgrade.sh 是更新服務器bash腳本
+
 ss-tor.sh 用來安裝shadowsocks-libev和洋葱路由(TOR)客戶端
+
 ss-tor-menu.sh是遠程控制shadowsocks流量是否經TOR訪問互聯網客戶端
 
 以上可在Ubuntu 14.04/15.04 或 Debian 7/8 獨立IPv4的VPS或是NAT Share IPv4 VPS
@@ -17,11 +20,12 @@ ss-tor-menu是本地Linux電腦控制服務器TOR開關圖型腳本
 使用方法
 
 以root登錄VPS，下載適合的腳本，執行chmod +x script_name.sh ,根據你的VPS類型，
+
 如果是NAT Share IPv4 VPS ,執行 ./script_name.sh -n , 獨立IPv4的VPS執行 
+
 ./script_name.sh -s
 
-ss-tor-menu.sh 請訪問https://victor-notes.blogspot.com/2016/05/shadowsockstor.html
-參考使用方法
+ss-tor-menu.sh 請訪問https://victor-notes.blogspot.com/2016/05/shadowsockstor.html 參考使用方法
 
 Explanation
 
